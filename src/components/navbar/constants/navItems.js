@@ -1,7 +1,6 @@
 import {
   Home,
   Calendar,
-  Sparkles,
   FolderKanban,
   Users,
   Trophy,
@@ -9,6 +8,7 @@ import {
   MessageSquare,
   HelpCircle,
   Book,
+  Bookmark,
 } from "lucide-react";
 
 export const NAV_ITEMS = [
@@ -25,12 +25,17 @@ export const NAV_ITEMS = [
   {
     name: "Hackathons",
     href: "/hackathons",
-    icon: <Sparkles className="w-5 h-5" />,
+    icon: <Trophy className="w-5 h-5" />,
   },
   {
     name: "Projects",
     href: "/projects",
     icon: <FolderKanban className="w-5 h-5" />,
+  },
+  {
+    name: "Saved",
+    href: "/saved-events",
+    icon: <Bookmark className="w-5 h-5" />,
   },
   {
     name: "Community",
